@@ -1,0 +1,678 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+div.progress-bar {
+    /* animation: load 3s normal forwards; */
+    background-color:#a47fce;
+     height:7px;
+}
+
+/* @keyframes load {
+    0% { width: 0; }
+    100% { width: 68%; }
+  } */
+
+.center {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width:1200px;
+    margin: 0 auto;
+}
+
+button {
+    border:none;
+    background:none;
+}
+
+nav > button:nth-child(5) > a {
+    color:#a47fce;
+}
+
+/* 헤더 영역 시작 */
+header {
+    height: 115px;
+    border-bottom:1px solid #ddd;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color:#555;
+    font-weight: bold;
+    padding: 27px 4px;
+    transition: all .55s;
+    
+}
+
+nav a:hover {
+    color:#ddd !important;
+}
+/* 헤더 영역 끝 */
+/* 메인 영역 시작 */
+
+.main {
+    width: 100%;
+}
+
+#main {
+    
+    position: relative;
+    z-index: -2;
+}
+
+#main img{
+    background-image: url(images/sample10.jpg);
+    height:55vh;
+    width:100%;
+    background-size: cover;
+    object-fit: cover;
+    filter: brightness(70%);
+    z-index: -1;
+}
+
+.icon-box {
+    display: grid;
+    grid-template-columns: repeat(2,130px);
+    width: 400px;
+    position: absolute;
+    left: 45%;
+    gap: 11px;
+    margin-top:30px;
+}
+
+.icon {
+    padding-top: 15px;
+    background-color: #fff;
+    height:130px;
+    display: flex;
+    box-shadow: 1px 2px 5px 2px rgba(0,0,0,0.1);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+ .border-pou {
+    position: absolute;        
+    right:10%;
+    top:70%;
+    border-radius: 50%;
+    transform: rotate(97deg);
+    border:18px  dotted rgba(255, 255, 255, 0.342);
+    width:300px;
+    height: 300px;
+}
+
+.mBox {
+    height:330px;
+    z-index: 100;
+    background-color: rgb(235, 235, 235);
+}
+
+.mBox-text p:nth-child(3){
+    color:#fff;
+    font-size: 12px;
+}
+
+.mBox-text p:nth-child(1){
+    color:#fff;
+    font-size: 20px;
+}
+
+.mBox-text p:nth-child(5) {
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    width: 192px;
+}
+
+.mBox-text button {
+    background-color: #000;
+    color:#fff;
+    margin-top: 30px;
+    padding: 7px 30px;
+    font-size: 12px;
+}
+
+.mBox-text div::after {
+    content: "-----";
+    font-weight: bold;
+}
+
+.mBox-text {
+    padding:30px;
+    width:380px;
+    /* height:330px; */
+    height: 430px;
+    background-color: #a47fce;
+    position: absolute;
+    left:20%;
+}
+
+.mBox-text span {
+    color:#000;
+    font-weight: bold;
+}
+
+#fundMain p {
+    margin-bottom: 0 !important;
+}
+
+.main-name {
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #555
+}
+
+#main .main-text {
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    color: #fff;
+}
+
+.main-text h2 {
+    font-weight: bold;
+    line-height: 30px;
+    font-size: 50px;
+}
+.main-text h4 {
+    /* font-weight: bold; */
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.main-text p {
+    font-size: 12px;
+    color:#ddd;
+}
+
+.main-text button {
+    margin-top: 30px;
+    width: 180px;
+    height: 40px;
+    color:#fff;
+}
+
+.one {
+    background-color:#8e43e6;
+
+}
+
+.two {
+    border:1px solid #ddd;
+    
+}
+
+
+.Box-text {
+    z-index: 100;
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column
+}
+
+.Box-text p {
+    font-weight: bold;
+}
+
+.Box-text h2 {
+    font-weight: bold;
+    color:#000;
+}
+
+.Box-text span {
+    font-weight:bold;
+    color:#a47fce;
+}
+
+#fundMain {
+    height: 500px;
+    display:grid;
+    gap:60px;
+    grid-template-columns: repeat(4,290px);
+}
+
+.fund {
+    box-shadow: 4px 10px 4px 4px rgba(0,0,0,0.2);
+    height: 360px;
+}
+
+.fund img {
+    width:100%;
+    height:55%;
+}
+
+.fund-text {
+    padding:20px;
+    font-size: 13px;
+}
+
+.fund p:nth-child(1) {
+    font-weight: bold;
+    color: #949494;
+}
+
+
+/* 메인 영역 끝 */
+/* 펀드보기 영역 시작 */
+
+.pageName {
+    font-weight: bold;
+    display:flex;
+    justify-content: center;
+    margin:100px;
+}
+
+.box-group {
+    display:grid;
+    grid-template-columns: repeat(2,540px);
+    gap:20px;
+}
+
+.box {
+    width:540px;
+    height:555px;
+    position: relative;
+    border-radius: 5px;
+    transition: .4s;
+    box-shadow: 4px 15px 20px 2px rgba(0,0,0,0.1);
+}
+
+#fundPage .bottom-text {
+    padding:10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#fundPage > div.box-group > div > div.bottom-text > div {
+    width: 62%;
+    height: 7px;
+}
+
+
+.box img {
+    width:540px;
+    height:440px;
+
+}
+
+.box:hover .t-group{
+    transform: translateY(-30%);
+    opacity: 1;
+}
+
+.box:hover img {
+    filter:brightness(50%);
+    transition: .4s;
+}
+
+.box:hover {
+    transform: translateY(-2%);
+    transition: .4s;
+}
+
+
+#fundPage > div.box-group > div> div.t-group > div {
+    height:7px;
+    margin-bottom:10px;
+    transition: .4s;
+    
+}
+
+#fundPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    background-image: url(images/대지\ 23.png);
+    background-repeat: no-repeat;
+}
+
+.t-group {
+    color:#fff;
+    font-weight: bold;
+    position: absolute;
+    top:40%;
+    left:32%;
+    opacity: 0;
+    transition: .4s;
+}
+
+.t-group  button {
+    background:none;
+    color:#ddd;
+    font-size: 13px;
+    border:1px solid #ddd;
+    padding:20px;
+    transition: .4s;
+}
+
+.t-group button:hover {
+    color:#000;
+    background-color: #fff;
+}
+
+.paging {
+    font-weight: bold;
+    margin:50px;
+    width:200px;
+    height:65px;
+    border:1px solid #555;
+    text-align: center;
+    padding-top:7px;
+    position: relative;
+    left:41%;
+}
+
+/* 펀드보기 영역 끝 */
+/* 펀드등록 영역 시작 */
+
+
+
+.in-group {
+    display: grid;
+    grid-template-columns: repeat(2,120px);
+    position: relative;
+    left: 23%;
+    margin-bottom: 50px;
+}
+
+.in-group .in:nth-child(1) {
+    background-color: #b28bdf;
+    width: 100%;
+    height: 350px;
+}
+
+
+.in-group .in:nth-child(2) {
+    width: 500%;
+}
+
+.in-group p {
+    font-size: 13px;
+    padding:7px;
+    color:#fff;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.in-group p:nth-child(1) {
+    padding: 15px;
+}
+.in-group p:nth-child(6) {
+    padding-top: 20px;
+    border:none;
+}
+#join {
+    background-image: url(images/대지\ 23.png);
+    
+}
+#join button {
+    background-color: #b28bdf;
+    margin-top: 10px;
+    width: 720px;
+    padding: 7px;
+    margin: 10px 0;
+    color:#fff;
+}
+
+.in-group input {
+    border:1px solid #ddd;
+    border-bottom:none;
+}
+
+.in-group input:nth-child(6) {
+    border-bottom:1px solid #ddd;
+}
+
+
+input {
+    font-size: 13px;
+    margin-bottom:10px;
+    width:100%;
+    height:50px;
+    border:none;
+    border-bottom:1px solid #ddd;
+}
+
+
+input:focus {
+    outline: none;
+}
+
+
+/* 이미지 들어갈곳 */
+.backImg {
+    width:430px;
+    height:70%;
+    margin-left: 40px;
+    background-color: #ddd;
+    background-image: url(images/map.png);
+    background-size: cover;
+
+}
+/* 펀드등록 영역 끝 */
+/* 투자자목록 영역 시작 */
+#list {
+    height:796px;
+    
+}
+.list-nav {
+    height:70px;
+    background-color:#a47fce;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top:20px;
+}
+
+.list-nav p {
+    color:#fff;
+}
+
+#list{
+    position: relative;
+}
+
+#list .pageName {
+    position: absolute;
+    top:0;
+    left:40%;
+}
+
+#list .container {
+    position: absolute;
+    top:20%;
+    left:17%;
+}
+#list img {
+    width:100%;
+    height: 80vh;
+}
+
+.item {
+    display:flex;
+    align-items: center;
+    height:80px;
+    background-color: #fff;
+    justify-content: space-around;
+    box-shadow: 5px 1px 4px 3px rgba(0,0,0,0.1);
+}
+
+.item p:nth-child(6) {
+    position: absolute;
+    right: 141px;
+}
+
+.item div.progress {
+    width:11%;
+}
+
+div.progress {
+    height:7px;
+}
+
+.page-btn {
+    position: relative;
+    margin:56px;
+}
+
+.page-btn span {
+    font-weight:bold;
+    color:rgb(158, 158, 158);
+}
+
+.page-btn select {
+    border:1px solid #ddd;
+    padding:5px;
+}
+
+.page-btn span:nth-child(1) {
+    border:1px solid #ddd;
+    padding:5px;
+}
+
+
+.page-btn span:nth-child(5) {
+    border:1px solid #ddd;
+    padding:5px;
+}
+
+#list .container p{
+    margin-bottom:0 !important;
+}
+
+/* 투자자목록 영역 끝 */
+/* 회원가입 영역 시작 */
+
+#reg {
+    height:70vh;
+    background-color:rgba(0, 0, 0, 0.048);
+}
+
+.inner {
+    background-color: rgba(255, 255, 255, 0.63);
+    width: 830px;
+    height: 70vh;
+    position: relative;
+    /* top: 9%; */
+    left: 28%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.inner input {
+    width:350px;
+    background:none;
+}
+
+.icon-group {
+    display:flex;
+}
+
+.icon-group div {
+    border-radius:50%;
+    border:1px solid #ddd;
+    width:35px;
+    height:35px;
+    margin:5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner span:nth-child(1) {
+    font-size: 50px;
+    font-weight: bold;
+    color: #a47fce;
+}
+
+.inner span:nth-child(3) {
+    margin-bottom: 36px;
+}
+
+.inner button {
+    background-color: #a47fce;
+    padding: 10px;
+    width: 236px;
+    border-radius: 39px;
+    color: #fff;
+    margin-top: 45px;
+}
+
+footer {
+    color:#ddd;
+    height:200px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #262b35;
+}
+
+.box-group {
+    display:grid;
+    grid-template-columns: repeat(2,540px);
+    gap:20px;
+}
+
+
+
+#fundMain .bottom-text {
+    padding:20px;
+    font-size: 15px;
+}
+#fundPage > div.fund-group > div > div.bottom-text > div {
+    width: 62%;
+    height: 7px;
+}
+
+#fundMain .fund {
+    height:360px;
+    position: relative;
+}
+
+
+#fundMain > div> img {
+    width:290px;
+    height:65%;
+
+}
+
+#fundMain > div> .t-group {
+    top: 76px;
+}
+
+.fund:hover .t-group{
+    transform: translateY(-30%);
+    opacity: 1;
+}
+
+.fund:hover img {
+    filter:brightness(50%);
+    transition: .4s;
+}
+
+#fundMain button {
+    margin-top:10px;
+        padding: 10px 20px;
+}
+
